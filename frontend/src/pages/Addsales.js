@@ -40,22 +40,25 @@ const Addsales = () => {
           <div className="card-body px-5">
             <h4 className="card-title text-center mt-3 fw-bold">ADD SALE ENTRY</h4>
             <form onSubmit={handleSubmit}>
-              <label>Product Name:</label>
+              <label htmlFor="productName">Product Name:</label>
               <input
+                id='productName'
                 type="text"
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={productName}
                 onChange={(e) => setProductName(e.target.value)}
               />
-              <label>Quantity:</label>
+              <label htmlFor="productName">Quantity:</label>
               <input
+                id='quantity'
                 type="number"
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
               />
-              <label>Amount:</label>
+              <label htmlFor="productName">Amount:</label>
               <input
+                id='amount'
                 type="number"
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={saleAmount}

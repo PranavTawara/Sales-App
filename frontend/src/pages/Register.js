@@ -56,27 +56,31 @@ const Register = () => {
           <div className="card-body px-5">
             <h4 className="card-title text-center mt-3 fw-bold">REGISTRATION FORM</h4>
             <form onSubmit={handleRegister}>
-              <label >FIRST NAME:</label>
+              <label htmlFor='firstName'>FIRST NAME:</label>
               <input
+                id='firstName'
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
               />
-              <label >Last NAME:</label>
+              <label htmlFor='lastName'>Last NAME:</label>
               <input
+                id='lastName'
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
-              <label >Email:</label>
+              <label htmlFor='email'>Email:</label>
               <input
+                id='email'
                 type="email"
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <label >Password:</label>
+              <label htmlFor='password'>Password:</label>
               <input
+                id='password'
                 type="password"
                 className="p-2 mt-2 mb-2 form-control input-bg"
                 value={password}

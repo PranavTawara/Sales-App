@@ -43,10 +43,10 @@ const Login = () => {
           <div className="card-body px-5">
             <h4 className="card-title text-center mt-3 fw-bold">LOGIN FORM</h4>
             <form onSubmit={handleLogin}>
-              <label>Email:</label>
-              <input type="email" name="email" className="p-2 mt-2 mb-2 form-control input-bg" />
-              <label>Password:</label>
-              <input type="password" name="password" className="p-2 mt-2 mb-2 form-control input-bg" />
+              <label htmlFor='email'>Email:</label>
+              <input id='email' type="email" name="email" className="p-2 mt-2 mb-2 form-control input-bg" autoComplete='email'/>
+              <label htmlFor='password'>Password:</label>
+              <input id='password' type="password" name="password" className="p-2 mt-2 mb-2 form-control input-bg" />
               <div className='mt-3 d-grid'>
                 <button type="submit" className="btn btn-primary">Submit</button>
               </div>

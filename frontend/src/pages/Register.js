@@ -21,7 +21,7 @@ const Register = () => {
       };
 
       // Make a fetch request to your server for registration
-      const response = await fetch('http://localhost:4000/Register', {
+      const response = await fetch('https://sales-app-q4l3.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
